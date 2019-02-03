@@ -7,23 +7,11 @@ body {
     padding: 0;
 }
 .header {
-    background: url(https://cloclo39.datacloudmail.ru/view/img/background.png?etag=26CD77AA4A133757299FD533AE0346C345B35FB1&x-email=badbe%40bk.ru) no-repeat 50% 50%;
+    background: url(/img/bg-1.png) no-repeat;
     background-size: cover;
     color: #fff;
     padding-bottom: 70px;
     position: relative;
-    z-index: -2;
-    &::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
-        opacity: 0.85;
-        z-index: -1;
-    }
 }
 .header-container {
     max-width: 900px;
@@ -92,22 +80,7 @@ body {
     text-decoration: none;
     font-weight: bold;
 }
-.logo {
-    color: linear-gradient(to right, #00e0d0 0%, #4aa3cc 100%);
-    font-size: 30px;
-    font-weight: lighter;
-    padding-left: 55px;
-    position: relative;
-    &::before {
-        content: '';
-        position: absolute;
-        width: 44px;
-        height: 50px;
-        background: url(https://cloclo25.datacloudmail.ru/view/img/logo.png?etag=C18FFEE0CA4F3BA8E68446F3B6A04B0C4440BDA6&x-email=badbe%40bk.ru) no-repeat 50% 50%;
-        top: -10px;
-        left: 0;
-    } 
-}
+
 .description-btn {
     background: none;
     color: #00e0d0;
@@ -519,4 +492,114 @@ body {
     font-weight: 400;
     text-transform: uppercase;
     color: #00e0d0; 
+}
+.footer {
+    position: relative;
+    padding: 70px 0;
+    background: url(/img/bg-2.png) no-repeat;
+    background-size: cover;
+}
+.footer-container {
+    max-width: 940px;
+    margin: 0 auto;
+    color: #fff;
+    z-index: 1;
+}
+.footer-items-block {
+    display: grid;
+    grid-template-columns: 1/3fr 1/4fr 1/3fr;
+    grid-template-rows: auto;
+    justify-content: space-between;
+}
+.footer-items-menu-copy {
+    display: grid;
+    grid-template-columns: 1/2fr 1/2fr;
+    grid-template-rows: auto;
+    padding-top: 70px;
+}
+.footer-copy {
+    text-align: right;
+    margin-top: auto;
+}
+.footer-ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: space-between;
+    max-width: 301px;
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        text-transform: uppercase;
+        /* Text style for "H, ELP" */
+        letter-spacing: 0.35px; 
+    }
+}
+.footer-logo {
+    margin-bottom: 27px;
+}
+.footer-p {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+    /* Text style for "lorem quis" */
+    letter-spacing: 0.35px; 
+}
+.footer-text-block {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+    /* Text style for "Ruko cucru" */
+    letter-spacing: 0.35px; 
+    margin-bottom: 27px;
+}
+.footer-title {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 42px;
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* Text style for "O, UR STUD" */
+    letter-spacing: 0.75px; 
+}
+.footer-input {
+    border: 1px solid #ffffff;
+    background: none;
+    padding: 16px 0;
+    padding-left: 16px;
+    padding-right: 26px;
+    height: 45px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+    /* Text style for "Subscribe" */
+    letter-spacing: 0.7px;
+    margin-left: auto;
+    &::placeholder {
+        color: #fff;
+        opacity: 0.75;
+    }
+}
+.footer-sub {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 70px;
+        height: 45px;
+        top: 0;
+        right: 0;
+        background: url(/img/subscribe.png) no-repeat;
+    }
 }
