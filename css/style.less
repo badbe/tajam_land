@@ -1,0 +1,473 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background: url(https://cloclo39.datacloudmail.ru/view/img/background.png?etag=26CD77AA4A133757299FD533AE0346C345B35FB1&x-email=badbe%40bk.ru) no-repeat 50% 50%;
+    background-size: cover;
+    color: #fff;
+    padding-bottom: 70px;
+    position: relative;
+    z-index: -2;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+        opacity: 0.85;
+        z-index: -1;
+    }
+}
+.header-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.description-h1 {
+    font-size: 32px;
+    font-weight: 400;
+    /* Text style for "W, e Are A" */
+    letter-spacing: 0.32px;
+    margin-bottom: 21px;
+}
+.description {
+    text-align: center;
+    p {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        /* Text style for "This is Ph" */
+        letter-spacing: 0.7px;
+        margin-bottom: 50px;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        width: 10px;
+        height: 10px;
+        background: none;
+        display: inline-block;
+        border: 1px solid #c2c2c2;
+        border-radius: 50%;
+        &:hover {
+            cursor: pointer;
+            background: #00e0d0;
+        }
+    }
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    padding-top: 25px;
+    margin-bottom: 160px;
+    flex-wrap: wrap;
+}
+.nav {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.nav-li {
+    padding: 0 10px;
+}
+.nav-a {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    /* Text style for "HOME" */
+    letter-spacing: 0.33px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.logo {
+    color: linear-gradient(to right, #00e0d0 0%, #4aa3cc 100%);
+    font-size: 30px;
+    font-weight: lighter;
+    padding-left: 55px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 44px;
+        height: 50px;
+        background: url(https://cloclo25.datacloudmail.ru/view/img/logo.png?etag=C18FFEE0CA4F3BA8E68446F3B6A04B0C4440BDA6&x-email=badbe%40bk.ru) no-repeat 50% 50%;
+        top: -10px;
+        left: 0;
+    } 
+}
+.description-btn {
+    background: none;
+    color: #00e0d0;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 15px;
+    border: 1px solid #00e0d0;
+    margin-bottom: 120px;
+    &:hover {
+        cursor: pointer;
+    } 
+}
+.description-line {
+    width: 50px;
+    height: 1px;
+    background-color: #00e0d0;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.story {
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+.story-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    p {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        /* Text style for "T, his is" */
+        letter-spacing: 0.42px;
+        margin: 0;
+        padding: 0; 
+        margin-bottom: 30px;
+    }
+}
+.story-h2 {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* Text style for "O, UR STOR" */
+    letter-spacing: 1.1px;
+    padding: 0;
+    margin: 0; 
+    margin-bottom: 30px;    
+}
+.story-button {
+    color: #00e0d0;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 15px;
+    border: 1px solid #00e0d0;
+    background: none;
+}
+.story-text {
+    max-width: 538px;
+}
+.video {
+    background: url(https://cloclo21.datacloudmail.ru/view/city.png?etag=46717FBDDF91162625C21F8E0055F432C8F1F4BE&x-email=badbe%40bk.ru) no-repeat 50% 50%;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.video-layout {
+    background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+    opacity: 0.85;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.video-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    z-index: 3;
+    p {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        /* Text style for "W, ATCH OU" */
+        letter-spacing: 0.8px; 
+    }
+}
+.video-img {
+    margin-bottom: 34px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.expertisa {
+    padding-top: 70px;
+    padding-bottom: 68px;
+}
+.expertisa-line {
+    width: 50px;
+    height: 1px;
+    background-color: #00e0d0;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.expertisa-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+.expertisa-items {
+    display: grid;
+    grid-template-columns: 315px 315px 315px;
+    grid-template-rows: 250px;
+}
+.expertisa-item {
+    padding: 32px;
+    &:nth-of-type(2) {
+        border-left: 1px solid rgba(0, 0, 0, 0.1);
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    &:nth-of-type(4) {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    &:nth-of-type(5) {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    &:nth-of-type(6) {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    p, h3 {
+        padding: 0;
+        margin: 0;
+    }
+    p {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        /* Text style for "T, his is" */
+        letter-spacing: 0.7px;
+    }
+    h3 {
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        /* Text style for "W, EB DESI" */
+        letter-spacing: 0.7px;
+        margin-bottom: 25px; 
+    }
+    border-collapse: collapse;
+}
+.item-img {
+    margin-bottom: 35px;
+}
+.team {
+    padding-bottom: 70px;
+    background: url(/img/trees.svg) no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -2;
+    padding-top: 70px;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+        opacity: 0.85;
+        z-index: -1;
+    }
+    p {
+        font-size: 14px;
+        font-weight: 400;
+        /* Text style for "Lorem ipsu" */
+        letter-spacing: 1.05px;
+        color: #fff; 
+        margin-bottom: 18px;
+    }
+}
+.team-text-bottom {
+    margin-bottom: 25px !important;
+}
+.team-h2 {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* Text style for "MEET OUR A" */
+    letter-spacing: 1.1px;
+    color: #fff; 
+    margin-bottom: 15px;
+}
+.team-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+.team-line {
+    width: 50px;
+    height: 1px;
+    background-color: #00e0d0;
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+.team-grid {
+    display: grid;
+    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    margin-bottom: 70px;
+}
+.team-btn {
+    border: 1px solid #00e0d0;
+    background: none;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #00e0d0; 
+    &:hover {
+        cursor: pointer;
+    }
+}
+.team-photo {
+    width: 100%;
+    height: 229px;
+    background: #eee;
+}
+.team-text {
+    background: none;
+    border-left: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    width: 100%;
+    padding-top: 23px;
+    padding-bottom: 25px;
+    p {
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        /* Text style for "S, EMF UCU" */
+        letter-spacing: 0.7px;
+        &:not(:nth-of-type(2)) {
+        margin-bottom: 12px;
+        }
+    }
+}
+.works {
+    display: grid;
+    grid-template-columns: repeat(6, 1/6fr);
+    grid-template-rows: 200px 200px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.works-grid-item {
+    &:nth-of-type(odd) {
+        background: #eee;
+    }
+    &:nth-of-type(even) {
+        background: rgb(150, 150, 150);
+    }
+}
+.works-btn {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.work-btn {
+    padding: 15px 27px;
+    border: 1px solid #00e0d0;
+    background: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #00e0d0;
+}
+.reviews {
+    background: url(/img/trees2.png) no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -2;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+        opacity: 0.85;
+        z-index: -1;
+    }
+}
+.reviews-container {
+    text-align: center;
+    max-width: 770px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+    padding-top: 70px;
+    p {
+    padding: 0;
+    margin: 0;
+    }
+}
+.review {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    /* Text style for "T, his is" */
+    letter-spacing: 0.4px;
+    color: #fff;
+    opacity: 0.85;
+    margin-bottom: 50px !important;
+}
+.name-review {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 22px;
+    text-transform: uppercase;
+    /* Text style for "J, ANE GAL" */
+    letter-spacing: 0.7px;
+    color: #fff; 
+    margin-bottom: 13px !important;
+}
+.job-review {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: 0.7;
+    margin-bottom: 40px !important;
+}
+.mark {
+    color: #fff;
+    font-size: 100px;
+    line-height: 22px;
+    /* Text style for "“" */
+    letter-spacing: 3px; 
+    margin-bottom: 42px !important;
+}
+.contacts-container {
+    max-width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    input {
+        display: block;
+    }
+}
